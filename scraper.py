@@ -46,8 +46,7 @@ class EbayScraper(Scraper):
         price = soup.find("span", {"class": "s-item__price"}).text.strip()
         return Item(url, img_url, name, price)
 
-
-# 5
+    
 class BarnesScraper(Scraper):
     NAME = 'barnesandnoble'
 
